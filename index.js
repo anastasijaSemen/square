@@ -1,6 +1,6 @@
-const a = prompt("Enter coefficient a");
-const b = prompt("Enter coefficient b");
-const c = prompt("Enter coefficient c");
+const a = parseFloat(prompt("Enter coefficient a"));
+const b = parseFloat(prompt("Enter coefficient b"));
+const c = parseFloat(prompt("Enter coefficient c"));
 
 const x = solveSquareEquation(a, b, c);
 
@@ -13,11 +13,13 @@ function solveSquareEquation(a, b, c) {
     if (d < 0) {
         return "There is no solution to the equation";
     } else {
-        const x1 = (-2 - Math.sqrt(d)) / (2 * a);
-        const x2 = (-2 + Math.sqrt(d)) / (2 * a);
+        const x1 = (-b - Math.sqrt(d)) / (2 * a);
+        const x2 = (-b + Math.sqrt(d)) / (2 * a);
         return "There is two solution to the equation: " + x1 + " and " + x2;
     }
 }
+
+
 
 
 
