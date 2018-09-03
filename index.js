@@ -2,9 +2,9 @@ const a = parseFloat(prompt("Enter coefficient a"));
 const b = parseFloat(prompt("Enter coefficient b"));
 const c = parseFloat(prompt("Enter coefficient c"));
 
-const x = solveSquareEquation(a, b, c);
+const result = solveSquareEquation(a, b, c);
 
-alert(x);
+alert(result);
 
 
 function solveSquareEquation(a, b, c) {
