@@ -13,8 +13,8 @@ function solveSquareEquation(a, b, c) {
     if (d < 0) {
         return "There is no solution to the equation";
     } else {
-        const x1 = (-2 - d) / (2 * a);
-        const x2 = (-2 + d) / (2 * a);
+        const x1 = (-2 - Math.sqrt(d)) / (2 * a);
+        const x2 = (-2 + Math.sqrt(d)) / (2 * a);
         return "There is two solution to the equation: " + x1 + " and " + x2;
     }
 }
