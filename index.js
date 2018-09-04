@@ -1,6 +1,6 @@
-const a = parseFloat(prompt("Enter coefficient a"));
-const b = parseFloat(prompt("Enter coefficient b"));
-const c = parseFloat(prompt("Enter coefficient c"));
+const a = parseInt(prompt("Enter coefficient a"));
+const b = parseInt(prompt("Enter coefficient b"));
+const c = parseInt(prompt("Enter coefficient c"));
 
 const result = solveSquareEquation(a, b, c);
 
